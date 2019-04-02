@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-import data from './data.json';
 import Item from './Item';
 
-// import './ItemList.css'
+// import './Cart.css'
 
-class ItemList extends Component {
+class Cart extends Component {
 
   render() {
-    const { items } = data;
+    const items = this.props.items;
     const itemsList = items.map(i => <Item 
                                         id={i.id} 
                                         key={i.id}
                                         name={i.name}
                                         price={i.price}
                                         image_url={i.image_url}
-                                        location="list"
-                                        triggerAdd={this.props.triggerAdd} />);
+                                        location="cart"
+                                        triggerDelete={this.props.triggerDelete} />);
     return (
-      <div className="ItemList">
+      <div className="Cart">
         <div>
           { itemsList }
         </div>
@@ -26,4 +25,4 @@ class ItemList extends Component {
   }
 }
 
-export default ItemList;
+export default Cart;

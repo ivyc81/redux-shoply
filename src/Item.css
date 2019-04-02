@@ -1,0 +1,11 @@
+.Item {
+    max-height: 300px;
+    width: 200px;
+    margin: 3em;
+}
+
+
+.Item img {
+    max-width: 200px;
+    max-height: 200px
+}

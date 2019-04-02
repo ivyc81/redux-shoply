@@ -1,6 +1,22 @@
 .App {
   text-align: center;
+  display: flex;
 }
+
+.ItemList {
+  display: flex;
+  justify-content: flex-start;
+  background-color: green;
+  width: 50vw;
+}
+
+.Cart {
+  background-color: orange;
+  display: flex;
+  justify-content: flex-end; 
+  width: 50vw;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
