@@ -21,4 +21,14 @@ describe("rootReducer", () => {
         itemsInCart: []
     })
   })
+
+  it("returns correct state for wrong action type", () => {
+    const result = rootReducer({
+        itemsInCart: []
+    }, {type: "TEST_WILL_NOT_MATCH", payload: {id: 1}})
+
+    expect(result).toEqual({
+        itemsInCart: []
+    })
+  })
 })
