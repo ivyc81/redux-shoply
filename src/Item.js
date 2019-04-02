@@ -32,8 +32,8 @@ class Item extends Component {
         <div>
           { this.props.name }
         </div>
-        <div>
-          { this.props.price }
+        <div className="price-div">
+          ${ this.props.price }
         </div>
         <img src={ this.props.image_url } alt={ this.props.name }/>
         <div>

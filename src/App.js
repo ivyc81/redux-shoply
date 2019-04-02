@@ -23,11 +23,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ItemList 
-          triggerAdd={this.addItemToCart} />
-        <Cart
-          triggerDelete={this.deleteItemFromCart}
-          items={this.props.itemsInCart}/>
+        <div id="title">
+          <h1>SHOPLY</h1>
+        </div>
+        <div id="flex-container">
+          <ItemList 
+            triggerAdd={this.addItemToCart} />
+          <Cart
+            triggerDelete={this.deleteItemFromCart}
+            items={this.props.itemsInCart}/>
+        </div>
       </div>
     );
   }
